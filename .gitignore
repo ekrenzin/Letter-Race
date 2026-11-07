@@ -3,3 +3,31 @@ node_modules/
 dist/
 .dev.vars
 .DS_Store
+
+## ORCHARD
+# Auto-managed by config-seeder. Do not edit this section.
+.orchard/
+.worktrees/
+.claw/
+/.hooks/
+AGENTS.md
+ANTIGRAVITY.md
+CLAUDE.md
+GEMINI.md
+.agents/
+.claude/
+.cursor/
+.codex/
+.gemini/
+.grok/
+.opencode/
+.windsurfrules
+.cursorrules
+.mcp.json
+.github/hooks/orchard.json
+.github/copilot-instructions.md
+**/.orchard-seeded.json
+.planning/
+/sessions/
+/playground/
+## END ORCHARD ##

@@ -1,0 +1,243 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/sound-effect.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/sound-effect.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/jev-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/jev-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/jev-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/jev-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/graphify-pretool-nudge.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/graphify-pretool-nudge.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/orchard-session-start.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/orchard-session-start.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/session-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/session-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/chat-monitor-spawn.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/chat-monitor-spawn.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/codebase-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/codebase-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/graphify-session-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/graphify-session-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/jev-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/jev-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/loam-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/loam-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/runtime-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/runtime-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/trellis-required-session-start.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/trellis-required-session-start.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-coordination-stop.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-coordination-stop.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/beam-emit.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/beam-emit.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/jev-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/jev-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/runtime-context-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/runtime-context-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          },
+          {
+            "command": "PATH=\"${HOME:+$HOME/.local/bin:}/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin\"; test -f .hooks/trellis-recall-inject.sh || exit 0; ORCHARD_AGENT_TYPE=muse /bin/bash .hooks/trellis-recall-inject.sh",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}
